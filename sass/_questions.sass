@@ -1,0 +1,88 @@
+.questions
+	margin: 1rem 0 3rem
+	overflow-x: hidden
+	padding: 0 !important
+	&__list
+		display: flex
+	&__tab
+		flex-basis: 100%
+		max-height: 0
+		opacity: 0
+		overflow: hidden
+		padding: 0 2rem
+		transition: max-height $TRSC, opacity $TRS_time/2 $TRS_current
+		&.is-active
+			max-height: 30rem
+			opacity: 1
+	&__title
+		margin-bottom: 1rem
+	&__item
+		border: 1px solid $COLOR_border
+		border-radius: $GBDRS
+		cursor: pointer
+		overflow: hidden
+		&.is-active
+			border-color: $GCOLOR_accent
+	&__check
+		left: 0
+		opacity: 0
+		pointer-events: none
+		position: absolute
+		top: 0
+		z-index: -9999
+	&__point
+		background-color: rgba($GCOLOR_white, 0.75)
+		border: $GBDRS solid $GCOLOR_accent
+		border-radius: 9999px
+		display: flex
+		height: $QUESTIONS_point
+		position: absolute
+		width: $QUESTIONS_point
+		z-index: 100
+		&::before
+			background-color: $GCOLOR_accent
+			border-radius: 9999px
+			content: ''
+			display: block
+			height: 50%
+			margin: auto
+			width: 50%
+		&-mini
+			background-color: $COLOR_darkGrey
+			border-color: $GCOLOR_null
+			border-width: $GBDRS/2
+			height: $QUESTIONS_point/2
+			width: $QUESTIONS_point/2
+			&::before
+				background-color: $COLOR_darkGrey
+				height: 57.2%
+				width: 57.2%
+	&__label
+		color: rgba($GCOLOR_black, 0.7)
+		display: block
+		font-size: 12px
+		font-family: $GFONT_bold
+		letter-spacing: 1.2px
+		margin-bottom: 0.5rem
+		text-transform: uppercase
+	&__final
+		background-color: $GCOLOR_null
+		border: 1px solid $COLOR_border
+		border-radius: $GBDRS
+		display: block
+		font-size: 16px
+		font-family: $GFONT_bold
+		margin-bottom: 1rem
+		padding: 1rem
+		width: 100%
+		&:nth-child(2)
+			margin-top: 2rem
+	@media screen and ( max-width: #{$GTABLET}px )
+		&__tab
+			padding: 0 1.5rem
+	@media screen and ( max-width: #{$GMOBILE}px )
+		margin: 1rem 0
+		&__tab
+			padding: 0 1rem
+			&.is-active
+				max-height: 100rem

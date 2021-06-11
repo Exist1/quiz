@@ -1,0 +1,58 @@
+@keyframes online
+	0%
+		background-color: lightgreen
+	100%
+		background-color: green
+
+.chat
+	opacity: 0
+	padding: 0 2rem
+	position: absolute
+	right: 0
+	top: 20%
+	width: $SCREEN_before
+	&__name
+		background: url('../assets/face.png') left center no-repeat
+		height: $CHAT_bg
+		display: flex
+		font-family: $GFONT_bold
+		font-size: 16px
+		flex-direction: column
+		justify-content: center
+		padding-left: $CHAT_bg + 1rem
+		&::before, &::after
+			display: block
+		&::before
+			animation: online 1s $TRS_current infinite
+			background-color: green
+			border: 2px solid $COLOR_grey
+			border-radius: 9999px
+			bottom: 0.25rem
+			content: ''
+			height: 0.75rem
+			left: $CHAT_bg - 1rem
+			position: absolute
+			width: 0.75rem
+		&::after
+			content: 'Монтажник'
+			font-family: $GFONT_regular
+			font-size: 12px
+	&__msg
+		background-color: $COLOR_darkGrey
+		border-radius: $GBDRS
+		margin-top: 1rem
+		padding: 0.5rem
+		&::before
+			border: 0.75rem solid $GCOLOR_null
+			border-bottom: 0.75rem solid $COLOR_darkGrey
+			content: ''
+			left: 1rem
+			position: absolute
+			top: -1.5rem
+	&.is-active
+		opacity: 1
+	@media screen and ( max-width: #{$GTABLET}px )
+		padding: 1.5rem
+		top: 10%
+	@media screen and ( max-width: #{$GMOBILE}px )
+		display: none

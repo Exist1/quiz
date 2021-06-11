@@ -1,0 +1,25 @@
+.inputItem
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__item
+		flex-basis: calc((100%/2) - 1rem)
+		font-size: 16px
+		padding: 1rem 1rem 1rem #{1.5rem + $QUESTIONS_point/2}
+		&:not(:nth-last-child(-n+2))
+			margin-bottom: 1rem
+		&-dop:not(:last-child)
+			margin-bottom: 1rem
+	&__point
+		left: 1rem
+		top: calc(50% - #{$QUESTIONS_point/4})
+		.inputItem__item.is-active &
+			border-color: $GCOLOR_accent
+			&::before
+				background-color: $GCOLOR_accent
+	@media screen and ( max-width: #{$GMOBILE}px )
+		&__item
+			flex-basis: 100%
+			font-size: 14px
+			&:not(:last-child)
+				margin-bottom: 1rem

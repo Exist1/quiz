@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Пройдите тест и получите расчет стоимости вашего забора</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images -->
+	<link rel="icon" href="./assets/site/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/site/apple-touch-icon.png">
+
+	<!-- Preview for the site  -->
+	<meta property="og:image" content="//exist1.github.io/quizFences/assets/site/social-preview.png" />
+	<meta property="og:image:secure_url" content="https://exist1.github.io/quizFences/assets/site/social-preview.png" />
+	<meta property="og:image:type" content="image/jpeg" />
+	
+	<!-- Custom Browsers Color -->
+	<meta name="theme-color" content="#191B2F">
+
+	<link rel="stylesheet" href="./css/css.min.css">
+
+</head>
+<body>
+
+	<aside class="start start-bg"></aside>
+
+	<section class="screen">
+		<form class="screen__form" action="./mail_norm.php">
+			<h3 class="screen__subtitle screen__offset">
+				<svg class="btn__icon screen__subtitle-svg" viewBox="0 0 24 24"><path d="M17,21L14.25,18L15.41,16.84L17,18.43L20.59,14.84L21.75,16.25M12.8,21H5C3.89,21 3,20.11 3,19V5C3,3.89 3.89,3 5,3H19C20.11,3 21,3.89 21,5V12.8C20.39,12.45 19.72,12.2 19,12.08V5H5V19H12.08C12.2,19.72 12.45,20.39 12.8,21M12,17H7V15H12M14.68,13H7V11H17V12.08C16.15,12.22 15.37,12.54 14.68,13M17,9H7V7H17"></path></svg>
+				<span>Узнай стоимость производства и&nbsp;монтажа забора:</span>
+			</h3>
+
+			<div class="chat">
+				<p class="chat__name">Николай</p>
+				<p class="chat__msg">Укажите примерную высоту вашего забора.</p>
+			</div>
+
+			<div class="questions screen__offset">
+				<ul class="questions__list">
+					<li class="questions__tab is-active">
+						<h2 class="title questions__title">Выберите тип забора:</h2>
+
+						<ul class="imagesItem questions__answer">
+							<li class="questions__item imagesItem__item questions__item-dop">
+								<span class="questions__point imagesItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Забор из профлиста">
+								<picture class="box imagesItem__box">
+									<source srcset="./assets/type/1.webp" type="image/webp">
+									<img class="box__img" src="./assets/type/1.jpg">
+								</picture>
+								<p class="imagesItem__text">Забор из&nbsp;профлиста</p>
+							</li>
+							<li class="questions__item imagesItem__item">
+								<span class="questions__point imagesItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Забор из евроштакетника">
+								<picture class="box imagesItem__box">
+									<source srcset="./assets/type/2.webp" type="image/webp">
+									<img class="box__img" src="./assets/type/2.jpg">
+								</picture>
+								<p class="imagesItem__text">Забор&nbsp;из евроштакетника</p>
+							</li>
+							<li class="questions__item imagesItem__item">
+								<span class="questions__point imagesItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Сетчатый 3Д забор">
+								<picture class="box imagesItem__box">
+									<source srcset="./assets/type/3.webp" type="image/webp">
+									<img class="box__img" src="./assets/type/3.jpg">
+								</picture>
+								<p class="imagesItem__text">Сетчатый 3Д&nbsp;забор</p>
+							</li>
+							<li class="questions__item imagesItem__item">
+								<span class="questions__point imagesItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Забор из сетки рабицы">
+								<picture class="box imagesItem__box">
+									<source srcset="./assets/type/4.webp" type="image/webp">
+									<img class="box__img" src="./assets/type/4.jpg">
+								</picture>
+								<p class="imagesItem__text">Забор из&nbsp;сетки рабицы</p>
+							</li>
+						</ul>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Выберите тип профлиста:</h2>
+
+						<ul class="inputItem questions__answer">
+							<li class="questions__item inputItem__item inputItem__item-dop">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Профлист - с полимерным покрытием">
+								<span>С полимерным покрытием</span>
+							</li>
+							<li class="questions__item inputItem__item inputItem__item-dop">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Профлист - оцинкованный">
+								<span>Оцинкованный</span>
+							</li>
+							<li class="questions__item inputItem__item inputItem__item-dop">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Профлист - с имитацией (дерево, камень, кирпич)">
+								<span>С имитацией (дерево, камень, кирпич)</span>
+							</li>
+						</ul>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Выберите высоту забора:</h2>
+
+						<ul class="inputItem questions__answer">
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Высота забора - 1.5 метра">
+								<span>1.5 метра</span>
+							</li>
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Высота забора - 1.7 метра">
+								<span>1.7 метра</span>
+							</li>
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Высота забора - 1.8 метра">
+								<span>1.8 метра</span>
+							</li>
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Высота забора - 2 метра">
+								<span>2 метра</span>
+							</li>
+						</ul>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Введите примерную длину забора, в метрах:</h2>
+
+						<input class="textItem questions__item" type="number" placeholder="Например: 75 метров" name="Длина забора, м">
+						<p class="textItem__error">Извините, вы ввели некоректное значение длины!</p>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Выберите параметры ворот:</h2>
+
+						<ul class="inputBg inputBg-gate questions__answer">
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Длина ворот - 3 метра">
+								<span>3 метра</span>
+							</li>
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Длина ворот - 3.5 метра">
+								<span>3.5 метра</span>
+							</li>
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Длина ворот - 4 метра (стандарт)">
+								<span>4 метра (стандарт)</span>
+							</li>
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Свой вариант ворот">
+								<span>Свой вариант</span>
+							</li>
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Ворота не нужны">
+								<span>Ворота не нужны</span>
+							</li>
+						</ul>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Выберите размер калитки:</h2>
+
+						<ul class="inputBg inputBg-wicket questions__answer">
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Длина калитки - 1 метра">
+								<span>1 метр</span>
+							</li>
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Свой вариант калитки">
+								<span>Свой вариант</span>
+							</li>
+							<li class="questions__item inputBg__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Калитки не будет">
+								<span>Калитки не будет</span>
+							</li>
+						</ul>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Предполагаемые сроки монтажа:</h2>
+
+						<ul class="inputItem questions__answer">
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="На этой неделе">
+								<span>На этой неделе</span>
+							</li>
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="На следующей неделе">
+								<span>На следующей неделе</span>
+							</li>
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="В течение месяца">
+								<span>В течение месяца</span>
+							</li>
+							<li class="questions__item inputItem__item">
+								<span class="questions__point questions__point-mini inputItem__point"></span>
+								<input class="questions__check" type="checkbox" name="Через 2 - 3 месяца">
+								<span>Через 2 - 3 месяца</span>
+							</li>
+						</ul>
+					</li>
+					<li class="questions__tab">
+						<h2 class="title questions__title">Заполните форму, чтобы получить результаты расчетов:</h2>
+
+						<label for="phone" class="questions__label">Введите телефон:</label>
+						<input class="questions__final" id="phone" name="Телефон" type="tel" placeholder="+7 (___) ___-__-__" required>
+						<label for="name" class="questions__label">Введите имя:</label>
+						<input class="questions__final" id="name" name="Имя" placeholder="Имя" required>
+
+						<button class="btn btn-action btn-final" type="submit">
+							<svg class="btn__icon" viewBox="0 0 24 24"><path d="M20,12C20,16.42 16.42,20 12,20C7.58,20 4,16.42 4,12C4,7.58 7.58,4 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"></path></svg>
+							<span>Получить результаты</span>
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<footer class="screen__footer screen__offset">
+				<div class="btn screen__btn screen__prev">
+					<svg class="btn__icon btn__arrow-left" viewBox="0 0 31.49 31.49"><path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path></svg>
+				</div>
+				<div class="btn btn-action screen__btn screen__next">
+					<span>Далее</span>
+					<svg class="btn__icon btn__arrow-right" viewBox="0 0 31.49 31.49"><path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path></svg>
+				</div>
+			</footer>
+		</form>
+	</section>
+
+	<aside class="start start-info">
+		<h1 class="title start__title">Пройдите тест и&nbsp;получите расчет стоимости вашего забора</h1>
+		<p class="start__subtitle">Выезд замерщика в&nbsp;день обращения</p>
+		<button class="btn btn-action start__btn">
+			<svg class="btn__icon" viewBox="0 0 24 24"><path d="M20,12C20,16.42 16.42,20 12,20C7.58,20 4,16.42 4,12C4,7.58 7.58,4 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"></path></svg>
+			<span>Пройти тест</span>
+		</button>
+	</aside>
+
+	<script src="./js/js.js"></script>
+</body>
+</html>

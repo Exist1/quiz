@@ -1,0 +1,72 @@
+@import '_vars.sass'
+@import '_mixins.sass'
+
++font-face("Font-Regular", "../font/gilroy-regular")
++font-face("Font-SemiBold", "../font/gilroy-semibold")
+
+::selection
+	background-color: $GCOLOR_white
+	color: $GCOLOR_black
+
+*, *:before, *:after
+	box-sizing: border-box
+	color: $GCOLOR_black
+	font-family: $GFONT_regular
+	list-style: none
+	line-height: $LH_text
+	margin: 0
+	outline: none
+	padding: 0
+	position: relative
+	text-decoration: none
+	transition: all $TRSC
+	user-select: none
+
+html, body
+	height: 100%
+
+button, textarea
+	background-color: $GCOLOR_null
+	border: none
+	cursor: pointer
+a, button, div
+	color: inherit
+	span, svg, &::before, &::after, span::before, span::after
+		color: inherit
+		pointer-events: none
+h1, h2, h3, h4, h5, h6
+	font-family: $GFONT_bold
+	line-height: $LH_head
+
+body
+	background-color: $GCOLOR_white
+	display: flex
+	min-width: 320px
+	overflow-x: hidden
+
+.thanks
+	margin: auto
+	max-width: 1200px
+	padding: 1rem 2rem
+	text-align: center
+	width: 100%
+	&__title
+		font-size: 2rem
+		margin-bottom: 1.5rem
+	&__text
+		font-size: 1.5rem
+		margin: 0 auto
+		width: 70%
+	@media screen and ( max-width: #{$GTABLET}px )
+		padding: 1rem 1.5rem
+		&__title
+			font-size: 1.75rem
+		&__text
+			font-size: 1.25rem
+			width: 100%
+	@media screen and ( max-width: #{$GMOBILE}px )
+		padding: 1rem
+		&__title
+			font-size: 1.5rem
+		&__text
+			font-size: 14px

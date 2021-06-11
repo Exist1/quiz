@@ -1,0 +1,27 @@
+.imagesItem
+	display: flex
+	justify-content: space-between
+	&__item
+		flex-basis: calc(100%/4.5)
+	&__point
+		opacity: 0
+		top: 1rem
+		right: 1rem
+		.imagesItem__item.is-active &
+			opacity: 1
+	&__box
+		height: 12rem
+		width: 100%
+	&__text
+		font-size: 14px
+		padding: 1rem 0.5rem
+	@media screen and ( max-width: #{$GMOBILE_medium}px )
+		flex-wrap: wrap
+		&__item
+			flex-basis: calc(100%/2.125)
+			&:not(:nth-last-child(-n+2))
+				margin-bottom: 1rem
+		&__box
+			height: 8rem
+		&__text
+			padding: 0.5rem

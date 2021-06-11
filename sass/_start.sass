@@ -1,0 +1,62 @@
+.start
+	opacity: 0
+	position: fixed
+	z-index: 1000
+	body.is-ready &
+		opacity: 1
+	&-bg
+		background: url('../assets/start-bg.jpg') center no-repeat
+		background-size: cover
+		height: 100%
+		left: -$START_widthBg
+		top: 0
+		width: $START_widthBg
+		body.is-ready &
+			left: 0
+	&-info
+		top: 50%
+		right: -100% + $START_widthBg
+		padding: 1rem 2rem
+		transform: translateY(-50%)
+		width: 100% - $START_widthBg
+		body.is-ready &
+			right: 0
+	&__title::before
+		background-color: $GCOLOR_black
+		content: ''
+		display: block
+		height: 2px
+		margin-bottom: 1rem
+		width: 10%
+	&__subtitle
+		color: rgba($GCOLOR_black, 0.7)
+		font-size: 18px
+		margin: 1rem 0
+	@media screen and ( max-width: #{$GTABLET}px )
+		margin: 0
+		&-bg, &-info
+			width: 50%
+		&-bg
+			left: -50%
+		&-info
+			padding: 1rem 1.5rem
+			right: -50%
+	@media screen and ( max-width: #{$GMOBILE}px )
+		&-bg, &-info, &__btn
+			width: 100%
+		&-bg
+			height: $START_widthBg/2
+			left: auto
+			top: -$START_widthBg/2
+			body.is-ready &
+				left: auto
+				top: 0
+		&-info
+			padding: 1rem
+			right: -100%
+			top: $START_widthBg/2
+			transform: none
+		&__title::before
+			display: none
+		&__subtitle
+			font-size: 16px
